@@ -16,7 +16,6 @@ public class Fact {
 
     }
 }
-
 /*
 Enter any value:
 5
