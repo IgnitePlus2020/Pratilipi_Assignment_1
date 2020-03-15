@@ -32,5 +32,5 @@ public class Series_2 {
 /*
 Enter the value of n:
 10
-Fibonacci series:	1	1	2	3	5	8	13	21	34	55	
+Fibonacci series:	1	1	2	3	5	8	13	21	34	55
  */
