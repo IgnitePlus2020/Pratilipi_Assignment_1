@@ -1,3 +1,13 @@
+/*
+First term = 1+0 = 1
+2nd term = 1+1² = 2
+3rd term = 2+2² = 6
+4th term = 6+3² = 15
+5th term = 15+4² = 31
+6th term = 31+5² = 56
+
+Starting with index = 0, every odd indexed value is negated.
+ */
 import java.util.Scanner;
 
 public class Series_1 {
