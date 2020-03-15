@@ -18,7 +18,7 @@ public class Seq_6 {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the value of n:");
         n = in.nextInt();
-        System.out.println("Sequence 5:");
+        System.out.println("Sequence 6:");
         int i = 1, j = 1;
         if (n > 0) {
             while (i <= n) {
@@ -36,5 +36,5 @@ public class Seq_6 {
 Enter the value of n:
 120
 Sequence 5:
-1 5 13 29 49 77 109 
+1 5 13 29 49 77 109
  */
