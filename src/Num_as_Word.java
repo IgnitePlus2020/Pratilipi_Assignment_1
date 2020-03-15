@@ -59,5 +59,5 @@ public class Num_as_Word {
 Enter the value of n:
 12345
 12345 in words is:
-One Two Three Four Five 
+One Two Three Four Five
  */
