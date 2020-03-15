@@ -18,5 +18,5 @@ public class Seq_1 {
 Enter the value of num:
 10
 Sequence 1:
-4	16	36	64	100	
+4	16	36	64	100
  */
