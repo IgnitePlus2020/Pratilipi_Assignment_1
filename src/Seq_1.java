@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Seq_1 {
     public static void main(String[] args) {
-        int n, sum = 0;
+        int n;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the value of n:");
         n = in.nextInt();
