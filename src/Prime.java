@@ -24,5 +24,5 @@ public class Prime {
 /*
 Enter the range:
 3 15
-3	5	7	11	13	
+3	5	7	11	13
  */
