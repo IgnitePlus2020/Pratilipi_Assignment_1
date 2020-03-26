@@ -2,17 +2,17 @@ import java.util.Scanner;
 public class Swap_2 {
     public static void main(String[] args)
     {
-        int a, b, temp;
+        int num1, num2, temp;
         Scanner in = new Scanner(System.in);
         System.out.print("\nEnter the value of a:  ");
-        a= in.nextInt();
+        num1= in.nextInt();
         System.out.print("\nEnter the value of b:  ");
-        b = in.nextInt();
-        System.out.println("\nBefore swap:\na = " + a + "\nb = " + b);
-        temp = a;
-        a = b;
-        b = temp;
-        System.out.println("\nAfter swap:\na = " + a + "\nb = " + b);
+        num2 = in.nextInt();
+        System.out.println("\nBefore swap:\na = " + num1 + "\nb = " + num2);
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+        System.out.println("\nAfter swap:\na = " + num1 + "\nb = " + num2);
     }
 }
 

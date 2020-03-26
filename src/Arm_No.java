@@ -9,20 +9,20 @@ import java.util.Scanner;
 
 public class Arm_No {
     public static void main(String[] args) {
-        int n, arm_no = 0, temp, dig;
+        int num, arm_no = 0, temp, dig;
         Scanner in = new Scanner(System.in);
         System.out.print("Enter any value:\t");
-        n = in.nextInt();
-        temp = n;
+        num = in.nextInt();
+        temp = num;
         while (temp > 0) {
             dig = temp % 10;
             temp = temp / 10;
             arm_no = arm_no + (dig * dig * dig);
         }
-        if (n == arm_no)
-            System.out.println(n + " is an Armstrong number");
+        if (num == arm_no)
+            System.out.println(num + " is an Armstrong number");
         else
-            System.out.println(n + " is NOT an Armstrong number");
+            System.out.println(num + " is NOT an Armstrong number");
     }
 }
 /*

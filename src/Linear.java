@@ -23,7 +23,6 @@ public class Linear {
         }
         if (flag == 0)
             System.out.println("Not Found!");
-
     }
 }
 

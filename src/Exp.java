@@ -6,6 +6,7 @@ push into OpndStack. If it is an operator or left paranthesis, push into OptrSta
 paranthesis then pop from OptrStack until left paranthesis and for each operator popped, pop two operands
 and push the result into OpndStack.
  */
+
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -15,8 +16,8 @@ public class Exp {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter an expression:");
         String exp = in.nextLine();
-        Exp i = new Exp();
-        System.out.println("The value of expression is " + i.getValue(exp));
+        Exp exp_obj = new Exp();
+        System.out.println("The value of expression is " + exp_obj.getValue(exp));
     }
 
     public int getValue(String expression) {
@@ -25,22 +26,22 @@ public class Exp {
         Stack<Integer> OpndStack = new Stack<>();
         int digit = 0;
         for (int i = 0; i < expression.length(); i++) {
-            char c = expression.charAt(i);
-            if (c == ' ') continue;
-            else if (Character.isDigit(c)) {
-                digit = c - '0';  //convert character c to integer
+            char ch = expression.charAt(i);
+            if (ch == ' ') continue;
+            else if (Character.isDigit(ch)) {
+                digit = ch - '0';  //convert character c to integer
                 while (i + 1 < expression.length() && Character.isDigit(expression.charAt(i + 1))) {
                     digit = digit * 10 + (expression.charAt(++i) - '0');    //If the value consists of more than one digit
                 }
                 OpndStack.push(digit);
-            } else if (isOpeator(c)) {
-                while (!OptrStack.isEmpty() && hasPrecedence(c, OptrStack.peek())) {
+            } else if (isOpeator(ch)) {
+                while (!OptrStack.isEmpty() && hasPrecedence(ch, OptrStack.peek())) {
                     OpndStack.push(applyOperation(OptrStack.pop(), OpndStack.pop(), OpndStack.pop()));
                 }
-                OptrStack.push(c);
-            } else if (c == '(') {
-                OptrStack.push(c);
-            } else if (c == ')') {
+                OptrStack.push(ch);
+            } else if (ch == '(') {
+                OptrStack.push(ch);
+            } else if (ch == ')') {
                 while (OptrStack.peek() != '(') {
                     OpndStack.push(applyOperation(OptrStack.pop(), OpndStack.pop(), OpndStack.pop()));
                 }
@@ -53,8 +54,8 @@ public class Exp {
         return OpndStack.pop();
     }
 
-    public boolean isOpeator(char c) {
-        return (c == '+' || c == '-' || c == '*' || c == '/');
+    public boolean isOpeator(char ch) {
+        return (ch == '+' || ch == '-' || ch == '*' || ch == '/');
     }
 
     public int applyOperation(char optr, int a, int b) {

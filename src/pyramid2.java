@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pyramid2 {
+public class Pyramid2 {
     public static void main(String[] args) {
         int n, i, j, k;
         System.out.println("Enter the value of n:");

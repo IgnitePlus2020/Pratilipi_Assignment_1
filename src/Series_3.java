@@ -22,14 +22,14 @@ public class Series_3 {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the value of n:");
         n = in.nextInt();
-        int a = 1, b = -2;
+        int oddPos = 1, evenPos = -2;
         for (int i = 1; i <= n; i++) {
             if (i % 2 != 0) {
-                System.out.print(a + "\t");
-                a = a + 3;
+                System.out.print(oddPos + "\t");
+                oddPos = oddPos + 3;
             } else {
-                System.out.print(b + "\t");
-                b = b - 4;
+                System.out.print(evenPos + "\t");
+                evenPos = evenPos - 4;
             }
         }
     }

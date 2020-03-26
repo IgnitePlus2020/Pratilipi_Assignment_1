@@ -13,7 +13,6 @@ public class Seq_2 {
             else
                 System.out.print(i + "\t");
         }
-
     }
 }
 

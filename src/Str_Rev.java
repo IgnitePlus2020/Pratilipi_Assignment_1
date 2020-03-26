@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Str_Rev {
     public static void main(String[] args) {
         String str, rev = "";
-        int len, j = 0;
+        int len;
         Scanner in = new Scanner(System.in);
         System.out.print("Enter any string:\t");
         str = in.nextLine();
