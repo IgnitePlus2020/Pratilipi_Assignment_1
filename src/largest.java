@@ -1,37 +1,36 @@
 import java.util.Scanner;
 
-public class largest {
+public class Largest {
     public static void main(String[] args) {
-        int a, b, c, max1 = 0, max2 = 0;
+        int num1, num2, num3, max1 = 0, max2 = 0;
         System.out.println("Enter 3 values:");
         Scanner in = new Scanner(System.in);
-        a = in.nextInt();
-        b = in.nextInt();
-        c = in.nextInt();
-        if (a > b && a > c) {
-            max1 = a;
-            if (b > c)
-                max2 = b;
+        num1 = in.nextInt();
+        num2 = in.nextInt();
+        num3 = in.nextInt();
+        if (num1 > num2 && num1 > num3) {
+            max1 = num1;
+            if (num2 > num3)
+                max2 = num2;
             else
-                max2 = c;
-        } else if (b > a && b > c) {
-            max1 = b;
-            if (a > c)
-                max2 = a;
+                max2 = num3;
+        } else if (num2 > num1 && num2 > num3) {
+            max1 = num2;
+            if (num1 > num3)
+                max2 = num1;
             else
-                max2 = c;
-        } else if (c > a && c > b) {
-            max1 = c;
-            if (a > b)
-                max2 = a;
+                max2 = num3;
+        } else if (num3 > num1 && num3 > num2) {
+            max1 = num3;
+            if (num1 > num2)
+                max2 = num1;
             else
-                max2 = b;
+                max2 = num2;
         }
         System.out.println(max1 + " is largest");
         System.out.println(max2 + " is second largest");
 
     }
-
 }
 
 /*

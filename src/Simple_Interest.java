@@ -4,21 +4,22 @@ Simple Interest = (P × R × T)/100
         R is rate per annum.
         T is time in years.
 */
+
 import java.util.Scanner;
+
 public class Simple_Interest {
-    public static void main(String args[])
-    {
-        float p, r, t, si;
+    public static void main(String args[]) {
+        float principal, rate, time, simpleInterest;
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the Principal : ");
-        p = in.nextFloat();
+        principal = in.nextFloat();
         System.out.print("Enter the Rate of interest : ");
-        r = in.nextFloat();
+        rate = in.nextFloat();
         System.out.print("Enter the Time period : ");
-        t = in.nextFloat();
+        time = in.nextFloat();
         in.close();
-        si = (p * r * t) / 100;
-        System.out.print("Simple Interest is: " +si);
+        simpleInterest = (principal * rate * time) / 100;
+        System.out.print("Simple Interest is: " + simpleInterest);
     }
 }
 

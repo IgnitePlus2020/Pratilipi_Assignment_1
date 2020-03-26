@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 public class Num_as_Word {
     public static void main(String[] args) {
-        int n, dig;
+        int num, dig;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the value of n:");
         try {
-            n = in.nextInt();
-            System.out.println(n + " in words is:");
-            int temp = n, rev = 0;
-            temp = n;
+            num = in.nextInt();
+            System.out.println(num + " in words is:");
+            int temp = num, rev = 0;
+            temp = num;
             while (temp != 0) {
                 rev += temp % 10;
                 rev *= 10;

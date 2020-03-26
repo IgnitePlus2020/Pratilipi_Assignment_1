@@ -16,15 +16,15 @@ public class Series_2 {
         System.out.println("Enter the value of n:");
         n = in.nextInt();
         System.out.print("Fibonacci series:\t");
-        int a = 0, b = 1, i;
+        int f0 = 0, f1 = 1, i;
         if (n < 1)
             return;
         for (i = 1; i <= n; i++)
         {
-            System.out.print(b + "\t");
-            int c = a + b;
-            a = b;
-            b = c;
+            System.out.print(f1 + "\t");
+            int f3 = f0 + f1;
+            f0 = f1;
+            f1 = f3;
         }
     }
 }

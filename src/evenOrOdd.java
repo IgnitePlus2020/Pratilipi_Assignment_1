@@ -1,22 +1,21 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class evenOrOdd {
+public class EvenOrOdd {
     public static void main(String[] args) {
-        int n;
+        int num;
         System.out.println("Enter the value of n:");
         Scanner in = new Scanner(System.in);
         try {
-            n = in.nextInt();
-            if (n % 2 == 0)
-                System.out.println(n + " is EVEN");
+            num = in.nextInt();
+            if (num % 2 == 0)
+                System.out.println(num + " is EVEN");
             else
-                System.out.println(n + " is ODD");
+                System.out.println(num + " is ODD");
         } catch (InputMismatchException e) {
             System.out.println("ERROR!\n" + e);
         }
     }
-
 }
 
 /*

@@ -18,7 +18,6 @@ public class Binary {
             System.out.println("Not Found!");
         else
             System.out.println("Found at " + (int) (res + 1) + " position.");
-
     }
 
     public static int binSearch(int low, int high, int arr[], int num) {
@@ -31,7 +30,6 @@ public class Binary {
                 low = mid + 1;
             else
                 high = mid - 1;
-
         }
         return -1;
     }

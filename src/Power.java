@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class Power {
     public static void main(String[] args) {
-        int X = 0, n = 0, res = 1;
+        int base = 0, expo = 0, res = 1;
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the base value:\t");
-        X = in.nextInt();
+        base = in.nextInt();
         System.out.print("Enter the exponent value:\t");
-        n = in.nextInt();
-        int temp = n;
+        expo = in.nextInt();
+        int temp = expo;
         while (temp > 0) {
-            res *= X;
+            res *= base;
             temp--;
         }
-        System.out.println(X + " ^ " + n + " is:\t" + res);
+        System.out.println(base + " ^ " + expo + " is:\t" + res);
     }
 }
 /*

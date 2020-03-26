@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Prime {
     public static void main(String[] args) {
-        int n = 0, m = 0;
+        int start = 0, stop = 0;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the range:");
-        n = in.nextInt();
-        m = in.nextInt();
-        for (int i = n; i <= m; i++) {
+        start = in.nextInt();
+        stop = in.nextInt();
+        for (int i = start; i <= stop; i++) {
             int flag = 0;
             for (int j = 2; j <= i / 2; j++) {
                 if (i % j == 0) {

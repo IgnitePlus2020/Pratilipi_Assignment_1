@@ -10,7 +10,6 @@ public class Seq_1 {
         for (int i = 2; i <= num; i += 2) {
             System.out.print(i * i + "\t");
         }
-
     }
 }
 

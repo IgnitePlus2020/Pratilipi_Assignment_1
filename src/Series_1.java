@@ -8,6 +8,7 @@ First term = 1+0 = 1
 
 Starting with index = 0, every odd indexed value is negated.
  */
+
 import java.util.Scanner;
 
 public class Series_1 {
@@ -16,14 +17,14 @@ public class Series_1 {
         Scanner in = new Scanner(System.in);
         System.out.println("Enetr the value of n:");
         n = in.nextInt();
-        int a = 1, b = 0, i = 0;
-        while (b < n) {
-            b = a + (i * i);
+        int base = 1, rep = 0, i = 0;
+        while (rep < n) {
+            rep = base + (i * i);
             if (i % 2 != 0)
-                System.out.print(b * (-1) + "\t");
+                System.out.print(rep * (-1) + "\t");
             else
-                System.out.print(b + "\t");
-            a = b;
+                System.out.print(rep + "\t");
+            base = rep;
             i += 1;
         }
     }

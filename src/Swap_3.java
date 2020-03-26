@@ -2,20 +2,20 @@ import java.util.Scanner;
 
 public class Swap_3 {
     public static void main(String[] args) {
-        int a, b, c, temp;
+        int num1, num2, num3, temp;
         Scanner in = new Scanner(System.in);
         System.out.print("\nEnter the value of a:  ");
-        a = in.nextInt();
+        num1 = in.nextInt();
         System.out.print("\nEnter the value of b:  ");
-        b = in.nextInt();
+        num2 = in.nextInt();
         System.out.print("\nEnter the value of c:  ");
-        c = in.nextInt();
-        System.out.println("\nBefore swap:\na = " + a + "\nb = " + b + "\nc = " + c);
-        temp = b;   //Cyclic Swap
-        b = a;
-        a = c;
-        c = temp;
-        System.out.println("\nAfter swap:\na = " + a + "\nb = " + b + "\nc = " + c);
+        num3 = in.nextInt();
+        System.out.println("\nBefore swap:\na = " + num1 + "\nb = " + num2 + "\nc = " + num3);
+        temp = num2;   //Cyclic Swap
+        num2 = num1;
+        num1 = num3;
+        num3 = temp;
+        System.out.println("\nAfter swap:\na = " + num1 + "\nb = " + num2 + "\nc = " + num3);
     }
 }
 
